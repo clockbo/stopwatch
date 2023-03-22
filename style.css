@@ -1,0 +1,66 @@
+*
+{
+  margin: 0;
+  padding: 0;
+}
+
+body
+{
+  width: 100%;
+  height: 100vh;
+  background-image:url(https://cdn.pixabay.com/photo/2015/10/30/20/13/sunrise-1014712_960_720.jpg) ;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.container
+{
+  width: 50vw;
+  height: 50vh;
+  text-align: center;
+  position: relative;
+  border-radius: 10px;
+  background-color: rgba(0,0,0,0.6);
+  box-sizing: border-box;
+  background-attachment:fixed ;
+}
+#time
+{
+padding: 2rem 0;
+font-size: 2rem;
+position: relative;
+}
+#heading
+{
+  color:#fff;
+}
+
+.digits,.txt
+{
+  color: #f8f8f8;
+}
+.txt
+{
+  font-size: 0.7rem;
+}
+.btn
+{
+  padding: 0.4rem 1rem;
+  margin: 0 0.2rem;
+  border-radius: 10px;
+  border: 1px solid #f8f8f8;
+  transition: all .5s linear;
+  position: relative;
+}
+.btn:hover
+{
+  background-color: rgba(0,0,0,0.4);
+  color: #f8f8f8;
+ 
+}
+
+
