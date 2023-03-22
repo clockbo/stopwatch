@@ -3,7 +3,6 @@ var min=0;
 var sec=0;
 var count=0;
 var timer=false;
-const music=new Audio('songs/music-1.mp3');
 
 
 
@@ -12,13 +11,11 @@ function start()
 {
 timer=true;
 stopwatch();
-music.play();
 }
 // stop function
 function stop()
 {
 timer=false;
-music.pause();
 }
 
 // resrt function
@@ -33,7 +30,6 @@ function reset()
         document.getElementById("hr").innerHTML="00";
         document.getElementById("sec").innerHTML="00";
         document.getElementById("count").innerHTML="00";
-        music.pause();
         
 
 }
