@@ -19,14 +19,13 @@ body
 }
 .container
 {
-  width: 50vw;
-  height: 50vh;
+  width: 30vw;
+  min-height: 30vh;
   text-align: center;
   position: relative;
   border-radius: 10px;
   background-color: rgba(0,0,0,0.6);
   box-sizing: border-box;
-  background-attachment:fixed ;
 }
 #time
 {
