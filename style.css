@@ -3,12 +3,16 @@
   margin: 0;
   padding: 0;
 }
+html
+{
+  font-size: 30px;
+}
 
 body
 {
   width: 100%;
   height: 100vh;
-  background-image:url(https://cdn.pixabay.com/photo/2015/10/30/20/13/sunrise-1014712_960_720.jpg) ;
+  background:#F5FFFA;
   background-position: center;
   background-size: cover;
   display: flex;
@@ -19,23 +23,24 @@ body
 }
 .container
 {
-  width: 30vw;
-  min-height: 30vh;
+  width: 50vw;
+  height:auto;
   text-align: center;
-  position: relative;
   border-radius: 10px;
   background-color: rgba(0,0,0,0.6);
   box-sizing: border-box;
+}
+
+#heading
+{
+  color:#fff;
+  font-size: 1.7rem;
 }
 #time
 {
 padding: 2rem 0;
 font-size: 2rem;
 position: relative;
-}
-#heading
-{
-  color:#fff;
 }
 
 .digits,.txt
@@ -44,7 +49,11 @@ position: relative;
 }
 .txt
 {
-  font-size: 0.7rem;
+  font-size: 0.5rem;
+}
+.btn-container
+{
+  margin: 1rem;
 }
 .btn
 {
@@ -54,6 +63,7 @@ position: relative;
   border: 1px solid #f8f8f8;
   transition: all .5s linear;
   position: relative;
+
 }
 .btn:hover
 {
@@ -61,5 +71,84 @@ position: relative;
   color: #f8f8f8;
  
 }
+.btn span
+{
+font-size: 1.0rem;
+}
+.green
+{
+  background-color: green;
+  color: white;
+}
+.red
+{
+  background-color: red;
+  color: white;
+}
+.yellow
+{
+  background-color: yellow;
+  color: white;
+}
 
 
+@media screen and (max-width: 1015px) 
+{
+ html
+ {
+  font-size: 20px;
+ }
+}
+@media screen and (max-width: 680px) 
+{
+ html
+ {
+  font-size: 18px;
+ }
+}
+@media screen and (max-width: 600px) 
+{
+ html
+ {
+  font-size: 25px;
+ }
+ .container
+ {
+  width: 90%;
+  height: 80vh;
+ }
+
+}
+@media screen and (max-width: 450px) 
+{
+ html
+ {
+  font-size: 30px;
+ }
+ body
+ {
+  background-color: antiquewhite;
+ }
+ 
+ .container
+ {
+  width: 100%;
+  height: 100vh;
+  background-color: #E0FFFF;
+
+ }
+ .digits,.txt,#heading
+{
+  color: #4B0082;
+}
+.btn
+{
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+}
+.btn span
+{
+  font-size: 1.2rem;
+}
+}
